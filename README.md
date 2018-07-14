@@ -3,6 +3,14 @@ PowerShell wrapper for the Brewerwall API.
 
 http://www.brewerwall.com/
 
+## Cmdlets
+
+```
+Get-Hop
+Get-HopSubstitue
+Get-Yeast
+```
+
 ## Examples
 
 ### Example 1
@@ -58,4 +66,23 @@ FarneseneMaximum     : 8
 CaryophylleneMinimum : 3
 CaryophylleneMaximum : 6
 Source               : Hop Union, Hoplist
+```
+
+### Example 3
+
+```
+Get-Hop -Name Centennial | Get-HopSubstitute | Select-Object -Property Name
+
+
+Name
+----
+AMARILLO
+CASCADE
+COLUMBUS
+SUMMIT
+CHINOOK
+AHTANUM
+ARAMIS
+TRISKEL
+CANTERBURY GOLDING
 ```

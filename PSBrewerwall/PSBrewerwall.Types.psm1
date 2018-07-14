@@ -1,4 +1,5 @@
 class Hop {
+    [Int]$Id
     [String]$Name
     [String]$Description
     [String]$Origin
@@ -24,6 +25,7 @@ class Hop {
     [String]$Source
 
     Hop ([Object]$object) {
+        $this.Id = $object.id
         $this.Name = $object.name
         $this.Description = $object.description
         $this.Origin = $object.Origin
@@ -51,6 +53,7 @@ class Hop {
 }
 
 class Yeast {
+    [Int]$Id
     [String]$Laboratory
     [String]$Strain
     [String]$Name
@@ -63,6 +66,7 @@ class Yeast {
     [Int]$Tolerance
 
     Yeast ([Object]$object) {
+        $this.Id = $object.id
         $this.Laboratory = $object.laboratory
         $this.Strain = $object.strain
         $this.Name = $object.name

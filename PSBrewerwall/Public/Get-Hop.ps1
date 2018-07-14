@@ -12,12 +12,26 @@ function Get-Hop {
             ParameterSetName = "ByName"
         )]
         [String[]]
-        $Name
+        $Name,
+
+        [Parameter(
+            ParameterSetName = "ByType"
+        )]
+        [ValidateSet(
+            "Aroma", "Bittering", "Both"
+        )]
+        [String[]]
+        $Type
     )
 
     switch ($PSCmdlet.ParameterSetName) {
         "ByName" {
             $path = "hops?name=${Name}"
+        }
+
+        "ByType" {
+            $formatedName = $Type.ToLower()
+            $path = "hops?type=${formatedName}"
         }
 
         default {
