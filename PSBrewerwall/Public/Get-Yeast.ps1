@@ -2,8 +2,12 @@ using module ..\PSBrewerwall.Types.psm1
 
 Function Get-Yeast {
 
-    [CmdletBinding()]
-    [OutputType()]
+    [CmdletBinding(
+        DefaultParameterSetName = "__AllParameterSets"
+    )]
+    [OutputType(
+        [Yeast]
+    )]
 
     param (
         [Parameter(
@@ -16,7 +20,13 @@ Function Get-Yeast {
             ParameterSetName = "ByStrain"
         )]
         [String[]]
-        $Strain
+        $Strain,
+
+        [Parameter(
+            ParameterSetName = "ByLaboratory"
+        )]
+        [String[]]
+        $Laboratory
     )
 
     switch ($PSCmdlet.ParameterSetName) {
@@ -26,12 +36,23 @@ Function Get-Yeast {
             )
             $path = "yeasts?name=${formatedName}"
         }
+
         "ByStrain" {
             $path = "yeasts?strain=${Strain}"
         }
+
+        "ByLaboratory" {
+            $path = "yeasts?laboratory=${Laboratory}"
+        }
+
+        default {
+            $path = "yeasts"
+        }
     }
 
-    [Yeast]::new(
-        ( Invoke-BrewerwallApi -Path $path )
-    )
+    foreach ($result in ( Invoke-BrewerwallApi -Path $path )) {
+        [Yeast]::new(
+            $result
+        )
+    }
 }
