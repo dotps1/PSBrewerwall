@@ -1,3 +1,55 @@
+class BeerStyle {
+    [Int]$Id
+    [String]$Name
+    [String]$Description
+    [String]$Category
+    [String]$Origin
+    [Float]$OriginalGravityMinimum
+    [Float]$OriginalGravityMaximum
+    [Float]$OriginalGravityPlatoMinimum
+    [Float]$OriginalGravityPlatoMaximum
+    [Float]$FinalGravityMinimum
+    [Float]$FinalGravityMaximum
+    [Float]$FinalGravityPlatoMinimum
+    [Float]$FinalGravityPlatoMaximum
+    [Float]$AlcoholByWeightMinimum
+    [Float]$AlcoholByWeightMaximum
+    [Float]$AlcoholByVolumeMinimum
+    [Float]$AlcoholByVolumeMaximum
+    [Float]$InternationalBitterUnitMinimum
+    [Float]$InternationalBitterUnitMaximum
+    [Float]$StandardReferenceMethodMinimum
+    [Float]$StandardReferenceMethodMaximum
+    [Float]$EBCMinimum
+    [Float]$EBCMaximum
+
+    BeerStyle ([Object]$object) {
+        $this.Id = $object.id
+        $this.Name = $object.name
+        $this.Description = $object.description
+        $this.Category = $object.category
+        $this.Origin = $object.origin
+        $this.OriginalGravityMinimum = $object.og_min
+        $this.OriginalGravityMaximum = $object.og_max
+        $this.OriginalGravityPlatoMinimum = $object.og_plato_min
+        $this.OriginalGravityPlatoMaximum = $object.og_plato_max
+        $this.FinalGravityMinimum = $object.fg_min
+        $this.FinalGravityMaximum = $object.fg_max
+        $this.FinalGravityPlatoMinimum = $object.fg_plato_min
+        $this.FinalGravityPlatoMaximum = $object.fg_plato_max
+        $this.AlcoholByWeightMinimum = $object.abw_min
+        $this.AlcoholByWeightMaximum = $object.abw_max
+        $this.AlcoholByVolumeMinimum = $object.abv_min
+        $this.AlcoholByVolumeMaximum = $object.abv_max
+        $this.InternationalBitterUnitMinimum = $object.ibu_min
+        $this.InternationalBitterUnitMaximum = $object.ibu_max
+        $this.StandardReferenceMethodMinimum = $object.srm_min
+        $this.StandardReferenceMethodMaximum = $object.srm_max
+        $this.EBCMinimum = $object.ebc_min
+        $this.EBCMaximum = $object.ebc_max
+    }
+}
+
 class Hop {
     [Int]$Id
     [String]$Name
@@ -49,6 +101,18 @@ class Hop {
         $this.CaryophylleneMinimum = $object.caryophyllene_min
         $this.CaryophylleneMaximum = $object.caryophyllene_max
         $this.Source = $object.source
+    }
+}
+
+class StandardReferenceMethod {
+    [Int]$Id
+    [Int]$Value
+    [String]$Hex
+
+    StandardReferenceMethod ([Object]$object) {
+        $this.Id = $object.id
+        $this.Value = $object.value
+        $this.Hex = $object.hex
     }
 }
 

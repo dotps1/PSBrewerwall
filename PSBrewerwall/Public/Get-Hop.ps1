@@ -40,8 +40,10 @@ function Get-Hop {
     }
 
     foreach ($result in ( Invoke-BrewerwallApi -Path $path )) {
-        [Hop]::new(
-            $result
-        )
+        if ($null -ne $result) {
+            [Hop]::new(
+                $result
+            )
+        }
     }
 }

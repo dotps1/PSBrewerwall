@@ -6,8 +6,10 @@ http://www.brewerwall.com/
 ## Cmdlets
 
 ```
+Get-BeerStyle
 Get-Hop
 Get-HopSubstitue
+Get-StandardReferenceMethod
 Get-Yeast
 ```
 

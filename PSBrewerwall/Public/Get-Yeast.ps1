@@ -51,8 +51,10 @@ Function Get-Yeast {
     }
 
     foreach ($result in ( Invoke-BrewerwallApi -Path $path )) {
-        [Yeast]::new(
-            $result
-        )
+        if ($null -ne $result) {
+            [Yeast]::new(
+                $result
+            )
+        }
     }
 }
