@@ -1,0 +1,619 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<helpItems schema="maml" xmlns="http://msh">
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-BeerStyle</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>BeerStyle</command:noun>
+      <maml:description>
+        <maml:para>Get one or many Beer Styles.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Get one or many Beer Styles from the Brewerwall database.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-BeerStyle</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Name</maml:name>
+          <maml:Description>
+            <maml:para>The Name of the Beer Style.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+          <dev:type>
+            <maml:name>String[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Name</maml:name>
+        <maml:Description>
+          <maml:para>The Name of the Beer Style.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+        <dev:type>
+          <maml:name>String[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>BeerStyle</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-BeerStyle -Name "Classic English-Style Pale Ale"
+
+
+Name                              : Classic English-Style Pale Ale
+Description                       : Classic English pale ales are golden to copper colored. Chill haze may be in
+                                    evidence only at very cold temperatures. They have low to medium malt flavor and
+                                    aroma. Low caramel malt character is allowable. Medium to medium-high hop
+                                    bitterness, flavor, and aroma should be evident. Hop character is evident as
+                                    earthy, herbal English-variety hop character. Note that “earthy, herbal
+                                    English-variety hop character” is the perceived end, but may be a result of the
+                                    skillful use of hops of other national origins. This is a medium-bodied ale.
+                                    Fruity-ester flavors and aromas are moderate to strong. The absence of diacetyl is
+                                    desirable, though, diacetyl (butterscotch character) is acceptable and
+                                    characteristic when at very low levels.
+
+OriginalGravityMinimum            : 1.04
+OriginalGravityMaximum            : 1.056
+FinalGravityMinimum               : 1.008
+FinalGravityMaximum               : 1.016
+AlcoholByVolumeMinimum            : 4.5
+AlcoholByVolumeMaximum            : 5.5
+InternationalBitteringUnitMinimum : 20
+InternationalBitteringUnitMaximum : 40
+StandardReferenceMethodMinimum    : 5
+StandardReferenceMethodMaximum    : 12</dev:code>
+        <dev:remarks>
+          <maml:para>Gets the 'Classic English-Style Pale Ale' Beer Style.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>http://www.brewerwall.com</maml:linkText>
+        <maml:uri>http://www.brewerwall.com</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://dotps1.github.io</maml:linkText>
+        <maml:uri>https://dotps1.github.io</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-Hop</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>Hop</command:noun>
+      <maml:description>
+        <maml:para>Get one or many Hops.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Get one or many Hops from the Brewerwall database.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-Hop</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Name</maml:name>
+          <maml:Description>
+            <maml:para>The name of the Hop.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+          <dev:type>
+            <maml:name>String[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+      <command:syntaxItem>
+        <maml:name>Get-Hop</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Type</maml:name>
+          <maml:Description>
+            <maml:para>The Type of Hop.</maml:para>
+          </maml:Description>
+          <command:parameterValueGroup>
+            <command:parameterValue required="false" command:variableLength="false">Aroma</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Bittering</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Both</command:parameterValue>
+          </command:parameterValueGroup>
+          <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+          <dev:type>
+            <maml:name>String[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Name</maml:name>
+        <maml:Description>
+          <maml:para>The name of the Hop.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+        <dev:type>
+          <maml:name>String[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Type</maml:name>
+        <maml:Description>
+          <maml:para>The Type of Hop.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+        <dev:type>
+          <maml:name>String[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>Hop</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-Hop -Name Cascade
+
+
+Name         : CASCADE
+Description  : American Cascades are extremely popular in the U.S., representing nearly 10% of the U.S. hops grown.
+               They have an excellent vigor and yield. It has a wonderful citrusy-spicy aroma and can be used in any
+               ales and lagers, particularly as American Pale Ales in the U.S. Its poor storage stability has made it
+               popular for major U.S. breweries whose production volume is huge and the product moves quite quickly.
+               The Cascades were developed from Open Pollination, Fuggle Hops, and the Russian Serebrianka.
+Origin       : US
+Type         : Aroma
+AlphaMinimum : 4.5
+AlphaMaximum : 7
+BetaMinimum  : 4.5
+BetaMaximum  : 7</dev:code>
+        <dev:remarks>
+          <maml:para>Gets the 'Cascade' Hop.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>http://www.brewerwall.com</maml:linkText>
+        <maml:uri>http://www.brewerwall.com</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://dotps1.github.io</maml:linkText>
+        <maml:uri>https://dotps1.github.io</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-HopSubstitute</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>HopSubstitute</command:noun>
+      <maml:description>
+        <maml:para>Gets a Hop Substitute.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Gets a Hop substitute from the Brewerwall database.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-HopSubstitute</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="0" aliases="none">
+          <maml:name>Hop</maml:name>
+          <maml:Description>
+            <maml:para>Hop object returnd from Get-Hop.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Hop</command:parameterValue>
+          <dev:type>
+            <maml:name>Hop</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="0" aliases="none">
+        <maml:name>Hop</maml:name>
+        <maml:Description>
+          <maml:para>Hop object returnd from Get-Hop.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Hop</command:parameterValue>
+        <dev:type>
+          <maml:name>Hop</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>Hop</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>Hop</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-Hop -Name Citra | Get-HopSubstitute
+
+
+Name         : TAURUS
+Description  : Hallertau Taurus lives up to its name by being Paulaner’s selection for their Oktoberfest bier. With 12
+               to nearly 18% alpha acids and its high myrcene content (up to 50% of the oils) it makes for a super
+               dual-use hop. The BarthHaas Group of hops experts tells of Taurus’ interesting earthy, strong aroma
+               with hints of chocolate and banana, spicy, peppery, and finishes with a zesty undernote of curry. It
+               carries the highest amount of xanthohumol of any hops, which is like saying it’s beer with a vitamin
+               punch. Now, not many people want to think about “healthy” beer, but hey, something that tastes this
+               great when added to the boil is sure to please.
+Origin       : German
+Type         : Bittering
+AlphaMinimum : 12
+AlphaMaximum : 17
+BetaMinimum  : 4
+BetaMaximum  : 6
+
+Name         : GALAXY
+Description  : Galaxy®, a unique Australian breed of hops, has the distinction of having the highest percentages of
+               essential oils known in the industry, ranging from 3.0-5.0%. It has an alpha acid content from 11-16%.
+               It has an amazing citrus, peach and passionfruit aroma, especially as a late addition. The flavor is
+               often quite intense upon production, which mellows as it matures. Galaxy® enjoyed her first commercial
+               production in 2009 after nine years of testing, and quickly became very popular. She was taken up by
+               many craft breweries and by amateur brewers as well. With a cohumulone content of 32-42%, it settles
+               nicely due to 5-7% beta acids.
+Origin       : Australian
+Type         : Aroma
+AlphaMinimum : 11
+AlphaMaximum : 16
+BetaMinimum  : 5
+BetaMaximum  : 6.9</dev:code>
+        <dev:remarks>
+          <maml:para>Gets one or more sutiable substitutes for a given Hop.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>http://www.brewerwall.com</maml:linkText>
+        <maml:uri>http://www.brewerwall.com</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://dotps1.github.io</maml:linkText>
+        <maml:uri>https://dotps1.github.io</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-StandardReferenceMethod</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>StandardReferenceMethod</command:noun>
+      <maml:description>
+        <maml:para>Get a Standard Reference Method (SRM).</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Get a St andard Reference Method (SRM) from the Brewerwall database.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-StandardReferenceMethod</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Value</maml:name>
+          <maml:Description>
+            <maml:para>The Standard Reference Method value.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+          <dev:type>
+            <maml:name>Int32</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Value</maml:name>
+        <maml:Description>
+          <maml:para>The Standard Reference Method value.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+        <dev:type>
+          <maml:name>Int32</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>StandardReferenceMethod</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-StandardReferenceMethod -Value 1
+
+
+Value : 1
+Hex   : #FFE699
+
+Value : 2
+Hex   : #FFD878</dev:code>
+        <dev:remarks>
+          <maml:para>Gets the first Standard Reference Method.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>http://www.brewerwall.com</maml:linkText>
+        <maml:uri>http://www.brewerwall.com</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://dotps1.github.io</maml:linkText>
+        <maml:uri>https://dotps1.github.io</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-Yeast</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>Yeast</command:noun>
+      <maml:description>
+        <maml:para>Get one or many Yeasts</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Get one or many Yeasts from the Brewerwall database.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-Yeast</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Laboratory</maml:name>
+          <maml:Description>
+            <maml:para>Get all Yeasts by Laboratory.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+          <dev:type>
+            <maml:name>String[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+      <command:syntaxItem>
+        <maml:name>Get-Yeast</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Name</maml:name>
+          <maml:Description>
+            <maml:para>Get Yeasts by Name.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+          <dev:type>
+            <maml:name>String[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+      <command:syntaxItem>
+        <maml:name>Get-Yeast</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Strain</maml:name>
+          <maml:Description>
+            <maml:para>Get Yeasts by Strain.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+          <dev:type>
+            <maml:name>String[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Laboratory</maml:name>
+        <maml:Description>
+          <maml:para>Get all Yeasts by Laboratory.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+        <dev:type>
+          <maml:name>String[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Name</maml:name>
+        <maml:Description>
+          <maml:para>Get Yeasts by Name.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+        <dev:type>
+          <maml:name>String[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Strain</maml:name>
+        <maml:Description>
+          <maml:para>Get Yeasts by Strain.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+        <dev:type>
+          <maml:name>String[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>Yeast</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-Yeast -Strain 1318
+
+
+Name               : London Ale III
+Description        : Originating from a traditional London brewery, this yeast has a wonderful malt and hop profile.
+                     It is a true top cropping strain with a fruity, very light and softly balanced palate. This
+                     strain will finish slightly sweet.
+Laboratory         : Wyeast
+Strain             : 1318
+AttenuationMinimum : 71
+AttenuationMaximum : 75
+Flocculation       : High
+TemperatureMinimum : 64
+TemperatureMaximum : 74
+Tolerance          : 10</dev:code>
+        <dev:remarks>
+          <maml:para>Get the 'London Ale III (1318)' Yeast.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>http://www.brewerwall.com</maml:linkText>
+        <maml:uri>http://www.brewerwall.com</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://dotps1.github.io</maml:linkText>
+        <maml:uri>https://dotps1.github.io</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+</helpItems>

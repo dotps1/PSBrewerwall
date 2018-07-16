@@ -2,7 +2,9 @@ using Module ..\PSBrewerwall.Types.psm1
 
 function Get-StandardReferenceMethod {
 
-    [CmdletBinding()]
+    [CmdletBinding(
+        DefaultParameterSetName = "__AllParameterSets"
+    )]
     [OutputType(
         [StandardReferenceMethod]
     )]
@@ -16,7 +18,9 @@ function Get-StandardReferenceMethod {
     )
 
     switch ($PSCmdlet.ParameterSetName) {
-        "ByValue" { }
+        "ByValue" {
+            $path = "srms/${$Value}"
+        }
 
         default {
             $path = "srms"

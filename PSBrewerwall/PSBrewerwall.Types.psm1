@@ -16,8 +16,8 @@ class BeerStyle {
     [Float]$AlcoholByWeightMaximum
     [Float]$AlcoholByVolumeMinimum
     [Float]$AlcoholByVolumeMaximum
-    [Float]$InternationalBitterUnitMinimum
-    [Float]$InternationalBitterUnitMaximum
+    [Float]$InternationalBitteringUnitMinimum
+    [Float]$InternationalBitteringUnitMaximum
     [Float]$StandardReferenceMethodMinimum
     [Float]$StandardReferenceMethodMaximum
     [Float]$EBCMinimum
@@ -41,8 +41,8 @@ class BeerStyle {
         $this.AlcoholByWeightMaximum = $object.abw_max
         $this.AlcoholByVolumeMinimum = $object.abv_min
         $this.AlcoholByVolumeMaximum = $object.abv_max
-        $this.InternationalBitterUnitMinimum = $object.ibu_min
-        $this.InternationalBitterUnitMaximum = $object.ibu_max
+        $this.InternationalBitteringUnitMinimum = $object.ibu_min
+        $this.InternationalBitteringUnitMaximum = $object.ibu_max
         $this.StandardReferenceMethodMinimum = $object.srm_min
         $this.StandardReferenceMethodMaximum = $object.srm_max
         $this.EBCMinimum = $object.ebc_min
